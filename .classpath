@@ -32,5 +32,60 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:8.0.17"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.google.protobuf:protobuf-java:3.6.1"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: junit:junit:3.8.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.data:spring-data-rest-core:3.3.3.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-tx:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-beans:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-core:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-jcl:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.hateoas:spring-hateoas:1.1.1.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-aop:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-context:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-web:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.jayway.jsonpath:json-path:2.4.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: net.minidev:json-smart:2.3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: net.minidev:accessors-smart:1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.ow2.asm:asm:5.0.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-webmvc:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-expression:5.2.8.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.data:spring-data-commons:2.3.3.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.plugin:spring-plugin-core:2.0.0.RELEASE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.atteo:evo-inflector:1.2.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.fasterxml.jackson.core:jackson-core:2.11.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.fasterxml.jackson.core:jackson-databind:2.11.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.slf4j:slf4j-api:1.7.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.plexus:plexus-compiler-javac:2.8.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.plexus:plexus-utils:3.0.22"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.plexus:plexus-compiler-api:2.8.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax:javaee-web-api:7.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.inject:jersey-hk2:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2:hk2-locator:2.5.0-b42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2:hk2-api:2.5.0-b42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.inject:javax.inject:1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2:hk2-utils:2.5.0-b42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.javassist:javassist:3.22.0-CR2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.core:jersey-common:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.ws.rs:javax.ws.rs-api:2.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.annotation:javax.annotation-api:1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2.external:javax.inject:2.5.0-b42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-jaxb:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-json-binding:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.eclipse:yasson:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.json:javax.json-api:1.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.enterprise:cdi-api:2.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.el:javax.el-api:3.0.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.interceptor:javax.interceptor-api:1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.json.bind:javax.json.bind-api:1.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.core:jersey-client:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.core:jersey-server:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: javax.validation:validation-api:1.1.0.Final"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-sse:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-multipart:2.26"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.jvnet.mimepull:mimepull:1.9.6"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

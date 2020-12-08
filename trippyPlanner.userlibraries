@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eclipse-userlibraries>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.2">
+    <archive path="/Users/danniolsen/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.2">
+    <archive path="/Users/danniolsen/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.2">
+    <archive path="/Users/danniolsen/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar" />
+  </library>
+  <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.2">
+    <archive path="/Users/danniolsen/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar" />
+  </library>
   <library name="Maven: com.fasterxml:classmate:1.5.1">
     <archive path="/Users/danniolsen/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar" />
   </library>
@@ -8,6 +20,9 @@
   </library>
   <library name="Maven: com.ibm.icu:icu4j:61.1">
     <archive path="/Users/danniolsen/.m2/repository/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar" />
+  </library>
+  <library name="Maven: com.jayway.jsonpath:json-path:2.4.0">
+    <archive path="/Users/danniolsen/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar" />
   </library>
   <library name="Maven: com.sun.istack:istack-commons-runtime:3.0.7">
     <archive path="/Users/danniolsen/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar" />
@@ -18,11 +33,41 @@
   <library name="Maven: javax.activation:javax.activation-api:1.2.0">
     <archive path="/Users/danniolsen/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar" />
   </library>
+  <library name="Maven: javax.annotation:javax.annotation-api:1.2">
+    <archive path="/Users/danniolsen/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar" />
+  </library>
+  <library name="Maven: javax.el:javax.el-api:3.0.0">
+    <archive path="/Users/danniolsen/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar" />
+  </library>
+  <library name="Maven: javax.enterprise:cdi-api:2.0">
+    <archive path="/Users/danniolsen/.m2/repository/javax/enterprise/cdi-api/2.0/cdi-api-2.0.jar" />
+  </library>
+  <library name="Maven: javax.inject:javax.inject:1">
+    <archive path="/Users/danniolsen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar" />
+  </library>
+  <library name="Maven: javax.interceptor:javax.interceptor-api:1.2">
+    <archive path="/Users/danniolsen/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar" />
+  </library>
+  <library name="Maven: javax.json.bind:javax.json.bind-api:1.0">
+    <archive path="/Users/danniolsen/.m2/repository/javax/json/bind/javax.json.bind-api/1.0/javax.json.bind-api-1.0.jar" />
+  </library>
+  <library name="Maven: javax.json:javax.json-api:1.1">
+    <archive path="/Users/danniolsen/.m2/repository/javax/json/javax.json-api/1.1/javax.json-api-1.1.jar" />
+  </library>
   <library name="Maven: javax.persistence:javax.persistence-api:2.2">
     <archive path="/Users/danniolsen/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar" />
   </library>
+  <library name="Maven: javax.validation:validation-api:1.1.0.Final">
+    <archive path="/Users/danniolsen/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" />
+  </library>
+  <library name="Maven: javax.ws.rs:javax.ws.rs-api:2.1">
+    <archive path="/Users/danniolsen/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar" />
+  </library>
   <library name="Maven: javax.xml.bind:jaxb-api:2.3.1">
     <archive path="/Users/danniolsen/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar" />
+  </library>
+  <library name="Maven: javax:javaee-web-api:7.0">
+    <archive path="/Users/danniolsen/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar" />
   </library>
   <library name="Maven: junit:junit:3.8.1">
     <archive path="/Users/danniolsen/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar" />
@@ -32,6 +77,12 @@
   </library>
   <library name="Maven: net.bytebuddy:byte-buddy:1.10.10">
     <archive path="/Users/danniolsen/.m2/repository/net/bytebuddy/byte-buddy/1.10.10/byte-buddy-1.10.10.jar" />
+  </library>
+  <library name="Maven: net.minidev:accessors-smart:1.2">
+    <archive path="/Users/danniolsen/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar" />
+  </library>
+  <library name="Maven: net.minidev:json-smart:2.3">
+    <archive path="/Users/danniolsen/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar" />
   </library>
   <library name="Maven: org.abego.treelayout:org.abego.treelayout.core:1.0.3">
     <archive path="/Users/danniolsen/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar" />
@@ -48,14 +99,77 @@
   <library name="Maven: org.antlr:ST4:4.3">
     <archive path="/Users/danniolsen/.m2/repository/org/antlr/ST4/4.3/ST4-4.3.jar" />
   </library>
+  <library name="Maven: org.atteo:evo-inflector:1.2.2">
+    <archive path="/Users/danniolsen/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar" />
+  </library>
+  <library name="Maven: org.codehaus.plexus:plexus-compiler-api:2.8.4">
+    <archive path="/Users/danniolsen/.m2/repository/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.jar" />
+  </library>
+  <library name="Maven: org.codehaus.plexus:plexus-compiler-javac:2.8.4">
+    <archive path="/Users/danniolsen/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/2.8.4/plexus-compiler-javac-2.8.4.jar" />
+  </library>
+  <library name="Maven: org.codehaus.plexus:plexus-utils:3.0.22">
+    <archive path="/Users/danniolsen/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar" />
+  </library>
   <library name="Maven: org.dom4j:dom4j:2.1.3">
     <archive path="/Users/danniolsen/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar" />
+  </library>
+  <library name="Maven: org.eclipse:yasson:1.0">
+    <archive path="/Users/danniolsen/.m2/repository/org/eclipse/yasson/1.0/yasson-1.0.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b42">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b42/aopalliance-repackaged-2.5.0-b42.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2.external:javax.inject:2.5.0-b42">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/external/javax.inject/2.5.0-b42/javax.inject-2.5.0-b42.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2:hk2-api:2.5.0-b42">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0-b42/hk2-api-2.5.0-b42.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2:hk2-locator:2.5.0-b42">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0-b42/hk2-locator-2.5.0-b42.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2:hk2-utils:2.5.0-b42">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0-b42/hk2-utils-2.5.0-b42.jar" />
+  </library>
+  <library name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar" />
   </library>
   <library name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.1">
     <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar" />
   </library>
   <library name="Maven: org.glassfish.jaxb:txw2:2.3.1">
     <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.26/jersey-container-servlet-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.core:jersey-client:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/core/jersey-client/2.26/jersey-client-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.core:jersey-common:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.core:jersey-server:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.inject:jersey-hk2:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.26/jersey-hk2-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.media:jersey-media-jaxb:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.26/jersey-media-jaxb-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.media:jersey-media-json-binding:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/media/jersey-media-json-binding/2.26/jersey-media-json-binding-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.media:jersey-media-multipart:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/media/jersey-media-multipart/2.26/jersey-media-multipart-2.26.jar" />
+  </library>
+  <library name="Maven: org.glassfish.jersey.media:jersey-media-sse:2.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/glassfish/jersey/media/jersey-media-sse/2.26/jersey-media-sse-2.26.jar" />
   </library>
   <library name="Maven: org.glassfish:javax.json:1.0.4">
     <archive path="/Users/danniolsen/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar" />
@@ -72,6 +186,9 @@
   <library name="Maven: org.hibernate.orm:hibernate-entitymanager:6.0.0.Alpha6">
     <archive path="/Users/danniolsen/.m2/repository/org/hibernate/orm/hibernate-entitymanager/6.0.0.Alpha6/hibernate-entitymanager-6.0.0.Alpha6.jar" />
   </library>
+  <library name="Maven: org.javassist:javassist:3.22.0-CR2">
+    <archive path="/Users/danniolsen/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar" />
+  </library>
   <library name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final">
     <archive path="/Users/danniolsen/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar" />
   </library>
@@ -81,8 +198,56 @@
   <library name="Maven: org.jboss:jandex:2.1.3.Final">
     <archive path="/Users/danniolsen/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar" />
   </library>
+  <library name="Maven: org.jvnet.mimepull:mimepull:1.9.6">
+    <archive path="/Users/danniolsen/.m2/repository/org/jvnet/mimepull/mimepull/1.9.6/mimepull-1.9.6.jar" />
+  </library>
   <library name="Maven: org.jvnet.staxex:stax-ex:1.8">
     <archive path="/Users/danniolsen/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar" />
+  </library>
+  <library name="Maven: org.ow2.asm:asm:5.0.4">
+    <archive path="/Users/danniolsen/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
+  </library>
+  <library name="Maven: org.slf4j:slf4j-api:1.7.26">
+    <archive path="/Users/danniolsen/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar" />
+  </library>
+  <library name="Maven: org.springframework.data:spring-data-commons:2.3.3.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/data/spring-data-commons/2.3.3.RELEASE/spring-data-commons-2.3.3.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework.data:spring-data-rest-core:3.3.3.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/data/spring-data-rest-core/3.3.3.RELEASE/spring-data-rest-core-3.3.3.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework.hateoas:spring-hateoas:1.1.1.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/hateoas/spring-hateoas/1.1.1.RELEASE/spring-hateoas-1.1.1.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework.plugin:spring-plugin-core:2.0.0.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-aop:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-beans:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-context:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-core:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-expression:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-tx:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-tx/5.2.8.RELEASE/spring-tx-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-web:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar" />
+  </library>
+  <library name="Maven: org.springframework:spring-webmvc:5.2.8.RELEASE">
+    <archive path="/Users/danniolsen/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar" />
   </library>
 </eclipse-userlibraries>
 
