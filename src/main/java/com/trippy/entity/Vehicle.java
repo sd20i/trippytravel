@@ -18,8 +18,6 @@ public class Vehicle implements Serializable{
     @Column(name="seats")
     private int seats;
 
-
-
     public int getVehicleId() {
         return vehicleId;
     }

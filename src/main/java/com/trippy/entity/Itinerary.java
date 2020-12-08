@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="itinerary")
+@Table(name = "itinerary")
 public class Itinerary implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -12,14 +12,22 @@ public class Itinerary implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int itineraryId;
 
-   @OneToOne()
-   private Ticket ticket;
+    @ManyToOne()
+    private Client client;
 
-   //@OneToOne()
-   //private Customer customer;
+    @OneToOne()
+    private Ticket ticket;
 
     public int getItineraryId() {
         return itineraryId;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public Ticket getTicket() {
@@ -29,12 +37,4 @@ public class Itinerary implements Serializable {
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
-
-    /*public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }*/
 }

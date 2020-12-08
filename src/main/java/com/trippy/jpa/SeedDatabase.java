@@ -20,12 +20,6 @@ public class SeedDatabase {
             et = em.getTransaction();
             et.begin();
 
-            Customer danni2 = new Customer();
-            danni2.setCustomerName("Danni");
-            danni2.setNationality("Dk");
-            danni2.setAdult(true);
-            em.persist(danni2);
-
             // Finnair seeds
             Vehicle finnairplane1 = new Vehicle();
             finnairplane1.setVehicleName("Ay394");
@@ -160,21 +154,21 @@ public class SeedDatabase {
             malStkTicket.setArrivalDate("2020-12-09");
             malStkTicket.setArrivalTime("10:45:00");
             em.persist(malStkTicket);
-
             // ticket seed ends
 
-            // itinerary seed
-            /*Itinerary itineraryOne = new Itinerary();
-            itineraryOne.setCustomer(danni);
-            itineraryOne.setTicket(cphMalTicket);
-            em.persist(itineraryOne);
+            // client seed
+            Client client1 = new Client();
+            client1.setClientName("Danni");
+            client1.setNationality("Dk");
+            em.persist(client1);
+            //client seed ends
 
-            Itinerary itineraryTwo = new Itinerary();
-            itineraryTwo.setCustomer(danni);
-            itineraryTwo.setTicket(malStkTicket);
-            em.persist(itineraryTwo);*/
+            //itinerary seed
+            Itinerary it1 = new Itinerary();
+            it1.setTicket(cphMalTicket);
+            it1.setClient(client1);
+            em.persist(it1);
             //itinerary seed ends
-
             // end seed
             et.commit();
         }catch(Exception ex){
@@ -182,6 +176,7 @@ public class SeedDatabase {
                 et.rollback();
             }
             ex.printStackTrace();
+            System.out.println("error");
         }finally {
             em.close();
             emf.close();
