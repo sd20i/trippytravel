@@ -40,4 +40,13 @@ public class Route implements Serializable {
     public void setCityTwo(City cityTwo) {
         this.cityTwo = cityTwo;
     }
+
+    @Override
+    public String toString() {
+        return "Route{" +
+                "routeId=" + routeId +
+                ", cityOne=" + cityOne +
+                ", cityTwo=" + cityTwo +
+                '}';
+    }
 }

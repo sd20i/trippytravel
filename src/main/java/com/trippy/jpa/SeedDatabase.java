@@ -40,6 +40,26 @@ public class SeedDatabase {
             em.persist(finnair);
             // Finnair ends
 
+            // dsb seeds
+            Vehicle dsb1 = new Vehicle();
+            dsb1.setVehicleName("IC344");
+            dsb1.setSeats(700);
+            em.persist(dsb1);
+
+            Vehicle dsb2 = new Vehicle();
+            dsb2.setVehicleName("IC4");
+            dsb2.setSeats(300);
+            em.persist(dsb2);
+
+            TravelCompany dsb = new TravelCompany();
+            dsb.setCompanyName("DSB");
+            List dsbVehicleList = new ArrayList();
+            dsbVehicleList.add(dsb1);
+            dsbVehicleList.add(dsb2);
+            dsb.setVehicleList(dsbVehicleList);
+            em.persist(dsb);
+
+
             // SAS seeds
             Vehicle sasplane1 = new Vehicle();
             sasplane1.setVehicleName("sk111");
@@ -132,7 +152,6 @@ public class SeedDatabase {
             em.persist(malStk);
             //route seed ends
 
-
             // ticket seed
             Ticket cphMalTicket = new Ticket();
             cphMalTicket.setRoute(cphMal);
@@ -174,6 +193,7 @@ public class SeedDatabase {
         }catch(Exception ex){
             if(et != null){
                 et.rollback();
+                System.out.println("in et != null");
             }
             ex.printStackTrace();
             System.out.println("error");
@@ -181,6 +201,5 @@ public class SeedDatabase {
             em.close();
             emf.close();
         }
-
     }
 }

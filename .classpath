@@ -87,5 +87,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-sse:2.26"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.glassfish.jersey.media:jersey-media-multipart:2.26"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.jvnet.mimepull:mimepull:1.9.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.google.code.gson:gson:2.8.0"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
