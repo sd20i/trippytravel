@@ -154,8 +154,8 @@ public class SeedDatabase {
 
             // ticket seed
             Ticket cphMalTicket = new Ticket();
-            cphMalTicket.setRoute(cphMal);
             cphMalTicket.setCompany(finnair);
+            cphMalTicket.setRoute(cphMal);
             cphMalTicket.setVehicle(finnair.getVehicleList().get(1));
             cphMalTicket.setDepartureDate("2020-12-09");
             cphMalTicket.setDepartureTime("07:54:00");

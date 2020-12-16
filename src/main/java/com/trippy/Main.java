@@ -1,6 +1,5 @@
 package com.trippy;
 
-import com.orderTicket.OrderTicket;
 import com.trippy.entity.City;
 import com.trippy.entity.Route;
 import com.trippy.jpa.DbConnect;
@@ -24,9 +23,7 @@ public class Main {
        City origin = em.find(City.class, (int) 14);
        City destination = em.find(City.class, (int) 15);
 
-       OrderTicket orderticket = new OrderTicket();
 
-       orderticket.orderBusTicket(origin, destination);
 
     }
 }
