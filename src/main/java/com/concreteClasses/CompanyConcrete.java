@@ -1,14 +1,13 @@
-package com.travelcompany;
+package com.concreteClasses;
 
+import com.interfaces.ItravelCompany;
 import com.trippy.entity.TravelCompany;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class CompanyConcrete implements ItravelCompany{
+public class CompanyConcrete implements ItravelCompany {
 
     @Override
     public List<TravelCompany> listCompanies(EntityManager em) {

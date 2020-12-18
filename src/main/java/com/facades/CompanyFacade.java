@@ -1,5 +1,7 @@
-package com.travelcompany;
+package com.facades;
 
+import com.interfaces.ItravelCompany;
+import com.concreteClasses.CompanyConcrete;
 import com.trippy.entity.TravelCompany;
 import javax.persistence.EntityManager;
 import java.util.List;

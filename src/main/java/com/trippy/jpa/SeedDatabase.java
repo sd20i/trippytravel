@@ -21,82 +21,25 @@ public class SeedDatabase {
             et.begin();
 
             // Finnair seeds
-            Vehicle finnairplane1 = new Vehicle();
-            finnairplane1.setVehicleName("Ay394");
-            finnairplane1.setSeats(130);
-            em.persist(finnairplane1);
-
-            Vehicle finnairplane2 = new Vehicle();
-            finnairplane2.setVehicleName("Ay666");
-            finnairplane2.setSeats(200);
-            em.persist(finnairplane2);
-
             TravelCompany finnair = new TravelCompany();
             finnair.setCompanyName("Finnair");
-            List finnairVehicleList = new ArrayList();
-            finnairVehicleList.add(finnairplane1);
-            finnairVehicleList.add(finnairplane2);
-            finnair.setVehicleList(finnairVehicleList);
             em.persist(finnair);
             // Finnair ends
 
-            // dsb seeds
-            Vehicle dsb1 = new Vehicle();
-            dsb1.setVehicleName("IC344");
-            dsb1.setSeats(700);
-            em.persist(dsb1);
-
-            Vehicle dsb2 = new Vehicle();
-            dsb2.setVehicleName("IC4");
-            dsb2.setSeats(300);
-            em.persist(dsb2);
-
             TravelCompany dsb = new TravelCompany();
             dsb.setCompanyName("DSB");
-            List dsbVehicleList = new ArrayList();
-            dsbVehicleList.add(dsb1);
-            dsbVehicleList.add(dsb2);
-            dsb.setVehicleList(dsbVehicleList);
             em.persist(dsb);
 
 
             // SAS seeds
-            Vehicle sasplane1 = new Vehicle();
-            sasplane1.setVehicleName("sk111");
-            sasplane1.setSeats(180);
-            em.persist(sasplane1);
-
-            Vehicle sasplane2 = new Vehicle();
-            sasplane2.setVehicleName("sk977");
-            sasplane2.setSeats(90);
-            em.persist(sasplane2);
-
-            Vehicle sasplane3 = new Vehicle();
-            sasplane3.setVehicleName("sk999");
-            sasplane3.setSeats(300);
-            em.persist(sasplane3);
-
             TravelCompany sas = new TravelCompany();
             sas.setCompanyName("SAS");
-            List sasVehicleList = new ArrayList();
-            sasVehicleList.add(sasplane1);
-            sasVehicleList.add(sasplane2);
-            sasVehicleList.add(sasplane3);
-            sas.setVehicleList(sasVehicleList);
             em.persist(sas);
             // SAS ends
 
-            // flexbus seeds
-            Vehicle flexbus1 = new Vehicle();
-            flexbus1.setVehicleName("E55");
-            flexbus1.setSeats(50);
-            em.persist(flexbus1);
 
             TravelCompany flexBus = new TravelCompany();
             flexBus.setCompanyName("Flex bus");
-            List flexVehicleList = new ArrayList();
-            flexVehicleList.add(flexbus1);
-            flexBus.setVehicleList(flexVehicleList);
             em.persist(flexBus);
             //flexbus ends
 
@@ -156,7 +99,6 @@ public class SeedDatabase {
             Ticket cphMalTicket = new Ticket();
             cphMalTicket.setCompany(finnair);
             cphMalTicket.setRoute(cphMal);
-            cphMalTicket.setVehicle(finnair.getVehicleList().get(1));
             cphMalTicket.setDepartureDate("2020-12-09");
             cphMalTicket.setDepartureTime("07:54:00");
             cphMalTicket.setArrivalDate("2020-12-09");
@@ -167,7 +109,6 @@ public class SeedDatabase {
             Ticket malStkTicket = new Ticket();
             malStkTicket.setRoute(malStk);
             malStkTicket.setCompany(sas);
-            malStkTicket.setVehicle(sas.getVehicleList().get(1));
             malStkTicket.setDepartureDate("2020-12-09");
             malStkTicket.setDepartureTime("09:00:00");
             malStkTicket.setArrivalDate("2020-12-09");

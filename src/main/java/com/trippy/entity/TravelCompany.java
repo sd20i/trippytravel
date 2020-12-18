@@ -1,7 +1,6 @@
 package com.trippy.entity;
 
 import java.io.Serializable;
-import java.util.List;
 import javax.persistence.*;
 
 @Entity
@@ -16,9 +15,6 @@ public class TravelCompany implements Serializable{
     @Column(name="companyName")
     private String companyName;
 
-    @OneToMany()
-    private List<Vehicle> vehicleList;
-
     public int getCompanyId() {
         return companyId;
     }
@@ -31,11 +27,4 @@ public class TravelCompany implements Serializable{
         this.companyName = companyName;
     }
 
-    public List<Vehicle> getVehicleList() {
-        return vehicleList;
-    }
-
-    public void setVehicleList(List<Vehicle> vehicleList) {
-        this.vehicleList = vehicleList;
-    }
 }

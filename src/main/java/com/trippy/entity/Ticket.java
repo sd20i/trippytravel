@@ -19,9 +19,6 @@ public class Ticket implements Serializable {
     @OneToOne
     private TravelCompany company;
 
-    @OneToOne
-    private Vehicle vehicle;
-
     @Temporal(TemporalType.DATE)
     private String departureDate;
 
@@ -57,14 +54,6 @@ public class Ticket implements Serializable {
 
     public void setCompany(TravelCompany company) {
         this.company = company;
-    }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
     }
 
     public String getDepartureDate() {

@@ -1,4 +1,4 @@
-package com.travelcompany;
+package com.interfaces;
 
 import com.trippy.entity.TravelCompany;
 import javax.persistence.EntityManager;
