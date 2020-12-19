@@ -1,5 +1,6 @@
 package com.concreteClasses;
 
+import com.google.gson.Gson;
 import com.interfaces.Iticket;
 import com.trippy.entity.Client;
 import com.trippy.entity.Route;
@@ -13,7 +14,7 @@ import java.util.List;
 public class TicketConcrete implements Iticket {
 
     private EntityManager em;
-
+    Gson gson = new Gson();
     public TicketConcrete(EntityManager em) {
         this.em = em;
     }
@@ -49,6 +50,6 @@ public class TicketConcrete implements Iticket {
         Query queryTickets = em.createQuery("SELECT i FROM Itinerary i WHERE i.client.id =:clientId ");
         queryTickets.setParameter("clientId", client.getClientId());
         tickets = queryTickets.getResultList();
-        System.out.println(tickets);
+        System.out.println(gson.toJson(tickets));
     }
 }

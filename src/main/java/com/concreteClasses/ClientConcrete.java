@@ -15,9 +15,14 @@ public class ClientConcrete implements IClient {
 
     @Override
     public Client getClientById(int id) {
-        Query queryClient = em.createQuery("SELECT c FROM Client c WHERE c.clientId =:clientId ");
-        queryClient.setParameter("clientId", id);
-        Client client = (Client) queryClient.getSingleResult();
-        return client;
+        try{
+            Query queryClient = em.createQuery("SELECT c FROM Client c WHERE c.clientId =:clientId ");
+            queryClient.setParameter("clientId", id);
+            Client client = (Client) queryClient.getSingleResult();
+            return client;
+        }catch(Exception ex){
+            System.out.println(ex);
+        }
+        return null;
     }
 }

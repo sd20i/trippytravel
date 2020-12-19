@@ -27,4 +27,11 @@ public class TravelCompany implements Serializable{
         this.companyName = companyName;
     }
 
+    @Override
+    public String toString() {
+        return "TravelCompany{" +
+                "companyId=" + companyId +
+                ", companyName='" + companyName + '\'' +
+                '}';
+    }
 }

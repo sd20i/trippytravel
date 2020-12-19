@@ -37,4 +37,13 @@ public class Itinerary implements Serializable {
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
+
+    @Override
+    public String toString() {
+        return "Itinerary{" +
+                "itineraryId=" + itineraryId +
+                ", client=" + client +
+                ", ticket=" + ticket +
+                '}';
+    }
 }

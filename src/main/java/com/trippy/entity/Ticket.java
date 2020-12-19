@@ -95,4 +95,18 @@ public class Ticket implements Serializable {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "ticketId=" + ticketId +
+                ", route=" + route +
+                ", company=" + company +
+                ", departureDate='" + departureDate + '\'' +
+                ", departureTime='" + departureTime + '\'' +
+                ", arrivalDate='" + arrivalDate + '\'' +
+                ", arrivalTime='" + arrivalTime + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

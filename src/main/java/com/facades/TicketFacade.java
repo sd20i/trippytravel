@@ -5,8 +5,6 @@ import com.trippy.entity.Client;
 import com.trippy.entity.Route;
 import com.trippy.entity.Ticket;
 import com.trippy.entity.TravelCompany;
-import com.trippy.jpa.DbConnect;
-
 import javax.persistence.EntityManager;
 import java.util.ArrayList;
 import java.util.List;

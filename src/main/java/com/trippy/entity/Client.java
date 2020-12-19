@@ -38,4 +38,13 @@ public class Client implements Serializable {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "clientId=" + clientId +
+                ", clientName='" + clientName + '\'' +
+                ", nationality='" + nationality + '\'' +
+                '}';
+    }
 }
