@@ -16,7 +16,7 @@ public class TicketFacade {
         ticket = new TicketConcrete(em);
     }
 
-    public String createTicket(Route route, TravelCompany company, int price, EntityManager em){
+    public String createTicket(Route route, TravelCompany company, int price){
         ticket.createNewTicket(route, company, price);
         return "Ticket created";
     };

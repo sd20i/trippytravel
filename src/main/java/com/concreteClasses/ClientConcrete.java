@@ -6,7 +6,7 @@ import com.trippy.entity.Client;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-public class ClientConcrete implements IClient {
+public class ClientConcrete extends IClient {
     private EntityManager em;
 
     public ClientConcrete(EntityManager em) {
@@ -21,8 +21,26 @@ public class ClientConcrete implements IClient {
             Client client = (Client) queryClient.getSingleResult();
             return client;
         }catch(Exception ex){
-            System.out.println(ex);
+            return new NoClient().getClientById(id);
         }
+    }
+
+    @Override
+    public boolean isNull() {
+        return false;
+    }
+}
+
+class NoClient extends IClient {
+
+    @Override
+    public Client getClientById(int id) {
+        System.out.println("No client was found by id " + id);
         return null;
+    }
+
+    @Override
+    public boolean isNull() {
+        return true;
     }
 }

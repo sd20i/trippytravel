@@ -9,12 +9,12 @@ import java.util.List;
 public class CompanyFacade {
     private ItravelCompany company;
 
-    public CompanyFacade() {
-        company = new CompanyConcrete();
+    public CompanyFacade(EntityManager em) {
+        company = new CompanyConcrete(em);
     }
 
-    public List<TravelCompany> ListCompanies(EntityManager em){
-        return company.listCompanies(em);
+    public List<TravelCompany> ListCompanies(){
+        return company.listCompanies();
     }
 
     public TravelCompany pickCompany(List<TravelCompany> companyList, int companyId){
