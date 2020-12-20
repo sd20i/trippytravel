@@ -67,8 +67,8 @@ public class Main {
 
 
         // find client, and use null object when not found
-        System.out.println(ANSI_BLUE + "Find a client by client id 20. (null object)" + ANSI_RESET);
-        clientFacade.getClient(20);
+        System.out.println(ANSI_BLUE + "Find a client by client id 19. (null object)" + ANSI_RESET);
+        clientFacade.getClient(19);
         System.out.println(ANSI_BLUE + "Find an client by id 26" + ANSI_RESET);
         Client client1 = clientFacade.getClient(26);
         System.out.println(ANSI_GREEN + client1.getClientName() + ANSI_RESET);
