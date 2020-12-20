@@ -2,7 +2,7 @@ package com.trippy;
 
 import com.facades.ClientFacade;
 import com.facades.TicketFacade;
-import com.iterator.NamesRepository;
+import com.iterator.ItinerarysRepository;
 import com.trippy.entity.Client;
 import com.trippy.entity.Itinerary;
 import com.trippy.jpa.DbConnect;
@@ -30,7 +30,7 @@ public class ItineraryMain {
         itineraries = ticketFacade.ticketsByClient(client1);
 
 
-        NamesRepository repository = new NamesRepository(itineraries);
+        ItinerarysRepository repository = new ItinerarysRepository(itineraries);
 
         System.out.println("********************* Client *******************");
         System.out.println(client1.getClientName());

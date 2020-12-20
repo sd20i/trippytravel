@@ -37,12 +37,6 @@ public class CityConcrete implements ICity {
     }
 
     @Override
-    public City pickDestination(City destination) {
-        // text like destination picked
-        return destination;
-    }
-
-    @Override
     public City getCityById(int cityId) {
         City destination = new City();
         try{

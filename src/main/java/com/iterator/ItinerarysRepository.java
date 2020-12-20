@@ -5,13 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 
 
-public class NamesRepository implements IContainer {
+public class ItinerarysRepository implements IContainer {
 
-    private String names[] = { "Ajay", "Vijay", "Martin", "Racheal", "Kim" };
     private List<Itinerary> itineraries;
 
-    public NamesRepository(List<Itinerary> itineraries) {
-        super();
+    public ItinerarysRepository(List<Itinerary> itineraries) {
         this.itineraries = itineraries;
     }
 
@@ -20,24 +18,18 @@ public class NamesRepository implements IContainer {
         return new CollectionofNamesIterate(this);
     }
 
-    public List getItineraries() {
-        return itineraries;
-    }
-
-
     public static class CollectionofNamesIterate implements Iterator<Itinerary> {
         private int currentElement = 0;
-        private NamesRepository namesRepository;
+        private ItinerarysRepository itinerarysRepository;
 
 
-        public CollectionofNamesIterate(NamesRepository namesRepository) {
-            super();
-            this.namesRepository = namesRepository;
+        public CollectionofNamesIterate(ItinerarysRepository itinerarysRepository) {
+            this.itinerarysRepository = itinerarysRepository;
         }
 
         @Override
         public boolean hasNext() {
-            if (currentElement < namesRepository.itineraries.size()) {
+            if (currentElement < itinerarysRepository.itineraries.size()) {
                 return true;
             }
             return false;
@@ -46,7 +38,7 @@ public class NamesRepository implements IContainer {
         @Override
         public Itinerary next() {
             if (this.hasNext()) {
-                return namesRepository.itineraries.get(currentElement++);
+                return itinerarysRepository.itineraries.get(currentElement++);
             }
             return null;
         }
