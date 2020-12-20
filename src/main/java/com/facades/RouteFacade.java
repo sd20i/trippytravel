@@ -2,6 +2,7 @@ package com.facades;
 
 import com.concreteClasses.RouteConcrete;
 import com.interfaces.IRoute;
+import com.trippy.entity.City;
 import com.trippy.entity.Route;
 import com.trippy.entity.TravelCompany;
 
@@ -22,5 +23,9 @@ public class RouteFacade {
 
     public List<Route> getAllRoutes(EntityManager em){
         return route.getAllRoutes(em);
+    }
+
+    public List<City> getAvailableRoutes(City origin){
+        return route.getAvailableRoutesByOrigin(origin);
     }
 }

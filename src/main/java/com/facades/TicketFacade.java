@@ -16,14 +16,15 @@ public class TicketFacade {
         ticket = new TicketConcrete(em);
     }
 
-    public String createTicket(Route route, TravelCompany company, int price){
-        ticket.createNewTicket(route, company, price);
-        return "Ticket created";
+    public Ticket createTicket(Route route, TravelCompany company, int price){
+        return ticket.createNewTicket(route, company, price);
     };
 
-    public List ticketsByClient(Client client){
-      List<Ticket> tickets = new ArrayList<>();
-      ticket.getTicketsByClient(client);
-      return tickets;
+    public void ticketsByClient(Client client){ // finish this
+        ticket.getTicketsByClient(client);
     };
+
+    public List<Ticket> listTicketsByRoute(Route route){
+        return ticket.getTicketsByRoute(route);
+    }
 }

@@ -1,12 +1,14 @@
 package com.concreteClasses;
 
 import com.interfaces.IRoute;
+import com.trippy.entity.City;
 import com.trippy.entity.Client;
 import com.trippy.entity.Route;
 import com.trippy.entity.TravelCompany;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RouteConcrete implements IRoute {
@@ -44,4 +46,24 @@ public class RouteConcrete implements IRoute {
         }
             return null;
         }
+
+    @Override
+    public List<City> getAvailableRoutesByOrigin(City origin) {
+        List<City> availableDestinations = new ArrayList<>();
+        try{
+            Query queryAvailableRoutes = em.createQuery("SELECT c FROM City c WHERE c.cityId !=:origin");
+            queryAvailableRoutes.setParameter("origin", origin.getCityId());
+            availableDestinations = queryAvailableRoutes.getResultList();
+
+        }catch(Exception ex){
+            System.out.println("queryAvailableRoutes");
+            System.out.println(ex);
+            System.out.println("-------------------------");
+        }
+        return availableDestinations;
     }
+}
+
+/*SELECT r
+FROM Route r
+WHERE 17 IN (cityOne_cityId, cityTwo_cityId);*/

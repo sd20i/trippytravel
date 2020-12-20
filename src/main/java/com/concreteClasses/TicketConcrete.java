@@ -2,43 +2,50 @@ package com.concreteClasses;
 
 import com.google.gson.Gson;
 import com.interfaces.Iticket;
-import com.trippy.entity.Client;
-import com.trippy.entity.Route;
-import com.trippy.entity.Ticket;
-import com.trippy.entity.TravelCompany;
+import com.trippy.entity.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TicketConcrete implements Iticket {
 
     private EntityManager em;
-    Gson gson = new Gson();
+
     public TicketConcrete(EntityManager em) {
         this.em = em;
     }
 
     @Override
-    public String createNewTicket(Route route, TravelCompany company, int price) {
-
+    public Ticket createNewTicket(Route route, TravelCompany company, int price) {
+        EntityTransaction et = null;
         Ticket newTicket = new Ticket();
-        newTicket.setRoute(route);
-        newTicket.setCompany(company);
-        newTicket.setPrice(price);
-        newTicket.setDepartureDate("");
-        newTicket.setDepartureTime("");
-        newTicket.setArrivalDate("");
-        newTicket.setArrivalTime("");
-        em.persist(newTicket);
+        try {
+            et = em.getTransaction();
+            et.begin();
 
-        return "Ticket created";
+            newTicket.setRoute(route);
+            newTicket.setCompany(company);
+            newTicket.setPrice(price);
+            newTicket.setDepartureDate("2021-03-01");
+            newTicket.setDepartureTime("17:50:00");
+            newTicket.setArrivalDate("2021-03-01");
+            newTicket.setArrivalTime("18:30:00");
+            em.persist(newTicket);
+
+        }catch (Exception ex){
+            et.rollback();
+            System.out.println("EX " + ex);
+        }
+        return newTicket;
     }
 
     @Override
     public List<Ticket> getTicketsByRoute(Route route) {
         List tickets;
-        Query queryTickets = em.createQuery("SELECT t FROM Ticket t WHERE t.route.id =:routeId ");
+        Query queryTickets = em.createQuery("SELECT t FROM Ticket t WHERE t.route.id =:routeId");
         queryTickets.setParameter("routeId", route.getRouteId());
         tickets = queryTickets.getResultList();
         return tickets;
@@ -50,6 +57,6 @@ public class TicketConcrete implements Iticket {
         Query queryTickets = em.createQuery("SELECT i FROM Itinerary i WHERE i.client.id =:clientId ");
         queryTickets.setParameter("clientId", client.getClientId());
         tickets = queryTickets.getResultList();
-        System.out.println(gson.toJson(tickets));
+        //System.out.println(gson.toJson(tickets));
     }
 }

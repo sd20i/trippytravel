@@ -90,6 +90,16 @@ public class SeedDatabase {
             malStk.setCityOne(malmo);
             malStk.setCityTwo(stockholm);
             em.persist(malStk);
+
+            Route malAal = new Route();
+            malStk.setCityOne(malmo);
+            malStk.setCityTwo(aal);
+            em.persist(malAal);
+
+            Route malGot = new Route();
+            malStk.setCityOne(malmo);
+            malStk.setCityTwo(goteborg);
+            em.persist(malGot);
             //route seed ends
 
             // ticket seed
