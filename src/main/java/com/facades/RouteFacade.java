@@ -25,7 +25,7 @@ public class RouteFacade {
         return route.getAllRoutes(em);
     }
 
-    public List<City> getAvailableRoutes(City origin){
+    public List<Route> getAvailableRoutes(City origin){
         return route.getAvailableRoutesByOrigin(origin);
     }
 }

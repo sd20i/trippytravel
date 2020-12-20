@@ -41,4 +41,19 @@ public class CityConcrete implements ICity {
         // text like destination picked
         return destination;
     }
+
+    @Override
+    public City getCityById(int cityId) {
+        City destination = new City();
+        try{
+            Query queryCity = em.createQuery("SELECT c FROM City c WHERE c.id = :cityId");
+            queryCity.setParameter("cityId", cityId);
+            destination = (City) queryCity.getSingleResult();
+        }catch(Exception ex){
+            System.out.println(ex);
+        }
+        return destination;
+    }
+
+
 }

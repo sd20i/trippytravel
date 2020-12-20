@@ -27,14 +27,13 @@ public class SeedDatabase {
             dsb.setCompanyName("DSB");
             em.persist(dsb);
 
-
             // SAS seeds
             TravelCompany sas = new TravelCompany();
             sas.setCompanyName("SAS");
             em.persist(sas);
             // SAS ends
 
-
+            // flex bus seed
             TravelCompany flexBus = new TravelCompany();
             flexBus.setCompanyName("Flex bus");
             em.persist(flexBus);
@@ -44,6 +43,10 @@ public class SeedDatabase {
             Country denmark = new Country();
             denmark.setCountryName("Denmark");
             em.persist(denmark);
+
+            Country sweden = new Country();
+            sweden.setCountryName("Sweden");
+            em.persist(sweden);
 
             City cph = new City();
             cph.setCityName("Copenhagen");
@@ -55,51 +58,95 @@ public class SeedDatabase {
             aal.setCountry(denmark);
             em.persist(aal);
 
-            Country sweden = new Country();
-            sweden.setCountryName("Sweden");
-            em.persist(sweden);
+            City mal = new City();
+            mal.setCityName("Malmö");
+            mal.setCountry(sweden);
+            em.persist(mal);
 
-            City malmo = new City();
-            malmo.setCityName("Malmö");
-            malmo.setCountry(sweden);
-            em.persist(malmo);
+            City got = new City();
+            got.setCityName("Goteborg");
+            got.setCountry(sweden);
+            em.persist(got);
 
-            City goteborg = new City();
-            goteborg.setCityName("Goteborg");
-            goteborg.setCountry(sweden);
-            em.persist(goteborg);
-
-            City stockholm = new City();
-            stockholm.setCityName("Stockholm");
-            stockholm.setCountry(sweden);
-            em.persist(stockholm);
+            City stk = new City();
+            stk.setCityName("Stockholm");
+            stk.setCountry(sweden);
+            em.persist(stk);
             //city / country ends
 
             //route seed
+
+            // copenhagen - aalborg
+            Route cphAal = new Route();
+            cphAal.setCityOne(cph);
+            cphAal.setCityTwo(aal);
+            em.persist(cphAal);
+
+            // copenhagen - Malmö
             Route cphMal = new Route();
             cphMal.setCityOne(cph);
-            cphMal.setCityTwo(malmo);
+            cphMal.setCityTwo(mal);
             em.persist(cphMal);
 
+            // copenhagen - Stockholm
             Route cphStk = new Route();
             cphStk.setCityOne(cph);
-            cphStk.setCityTwo(stockholm);
+            cphStk.setCityTwo(stk);
             em.persist(cphStk);
 
+            // aalborg - copenhagen
+            Route aalCph = new Route();
+            aalCph.setCityOne(aal);
+            aalCph.setCityTwo(cph);
+            em.persist(aalCph);
+
+            // aalborg - malmø
+            Route aalMal = new Route();
+            aalMal.setCityOne(aal);
+            aalMal.setCityTwo(mal);
+            em.persist(aalMal);
+
+            // malmo - copenhagen
+            Route malCph = new Route();
+            malCph.setCityOne(mal);
+            malCph.setCityTwo(cph);
+            em.persist(malCph);
+
+            // malmo - stockholm
             Route malStk = new Route();
-            malStk.setCityOne(malmo);
-            malStk.setCityTwo(stockholm);
+            malStk.setCityOne(mal);
+            malStk.setCityTwo(stk);
             em.persist(malStk);
 
+            // malmo - aalborg
             Route malAal = new Route();
-            malStk.setCityOne(malmo);
-            malStk.setCityTwo(aal);
+            malAal.setCityOne(mal);
+            malAal.setCityTwo(aal);
             em.persist(malAal);
 
-            Route malGot = new Route();
-            malStk.setCityOne(malmo);
-            malStk.setCityTwo(goteborg);
-            em.persist(malGot);
+            // Goteborg - copenhagen
+            Route gotCph = new Route();
+            gotCph.setCityOne(got);
+            gotCph.setCityTwo(cph);
+            em.persist(gotCph);
+
+            // Goteborg - malmo
+            Route gotMal = new Route();
+            gotMal.setCityOne(got);
+            gotMal.setCityTwo(mal);
+            em.persist(gotMal);
+
+            // stockholm - aalborg
+            Route stkAal = new Route();
+            stkAal.setCityOne(stk);
+            stkAal.setCityTwo(aal);
+            em.persist(stkAal);
+
+            // stockholm - copenhagen
+            Route stkCph = new Route();
+            stkCph.setCityOne(stk);
+            stkCph.setCityTwo(cph);
+            em.persist(stkCph);
             //route seed ends
 
             // ticket seed

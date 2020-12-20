@@ -48,10 +48,10 @@ public class RouteConcrete implements IRoute {
         }
 
     @Override
-    public List<City> getAvailableRoutesByOrigin(City origin) {
-        List<City> availableDestinations = new ArrayList<>();
+    public List<Route> getAvailableRoutesByOrigin(City origin) {
+        List<Route> availableDestinations = new ArrayList<>();
         try{
-            Query queryAvailableRoutes = em.createQuery("SELECT c FROM City c WHERE c.cityId !=:origin");
+            Query queryAvailableRoutes = em.createQuery("SELECT r FROM Route r WHERE r.cityOne.id =:origin");
             queryAvailableRoutes.setParameter("origin", origin.getCityId());
             availableDestinations = queryAvailableRoutes.getResultList();
 

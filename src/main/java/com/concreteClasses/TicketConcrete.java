@@ -4,14 +4,11 @@ import com.google.gson.Gson;
 import com.interfaces.Iticket;
 import com.trippy.entity.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Query;
-import java.util.ArrayList;
+import javax.persistence.*;
 import java.util.List;
 
 public class TicketConcrete implements Iticket {
-
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("trippyPlannerApp");
     private EntityManager em;
 
     public TicketConcrete(EntityManager em) {
@@ -21,6 +18,7 @@ public class TicketConcrete implements Iticket {
     @Override
     public Ticket createNewTicket(Route route, TravelCompany company, int price) {
         EntityTransaction et = null;
+
         Ticket newTicket = new Ticket();
         try {
             et = em.getTransaction();
@@ -35,6 +33,7 @@ public class TicketConcrete implements Iticket {
             newTicket.setArrivalTime("18:30:00");
             em.persist(newTicket);
 
+            et.commit();
         }catch (Exception ex){
             et.rollback();
             System.out.println("EX " + ex);

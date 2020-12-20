@@ -39,7 +39,6 @@ public class Main {
         System.out.println(ANSI_BLUE + "********************************************\n" + ANSI_RESET);
 
 
-
         // list all routes, pick random route
         List<Route> allRoutes = routeFacade.getAllRoutes(em);
         System.out.println(ANSI_BLUE + "Listing all routes" + ANSI_RESET);
@@ -71,8 +70,8 @@ public class Main {
         // find client, and use null object when not found
         System.out.println(ANSI_BLUE + "Find a client by client id 20. (null object)" + ANSI_RESET);
         clientFacade.getClient(20);
-        System.out.println(ANSI_BLUE + "Find an client by id 19" + ANSI_RESET);
-        Client client1 = clientFacade.getClient(19);
+        System.out.println(ANSI_BLUE + "Find an client by id 26" + ANSI_RESET);
+        Client client1 = clientFacade.getClient(26);
         System.out.println(ANSI_GREEN + client1.getClientName() + ANSI_RESET);
         System.out.println(ANSI_BLUE + "********************************************\n" + ANSI_RESET);
 
@@ -92,23 +91,22 @@ public class Main {
 
         // list destinations from origin
         System.out.println(ANSI_BLUE + "Listing all destinations from "+ ANSI_RESET + origin.getCityName() + "\n");
-        List<City> availableDestinations = routeFacade.getAvailableRoutes(origin);
-        List<City> available = new ArrayList<>();
-        for(City rou: availableDestinations){
-            if(rou.getCityName().equalsIgnoreCase(origin.getCityName())){
-                System.out.println(rou.getCityName() + " - " + origin.getCityName());
-                availableDestinations.add(rou);
-                available.add(rou);
+        List<Route> availableDestinations = routeFacade.getAvailableRoutes(origin);
+
+        for(Route rou: availableDestinations){
+            if(rou.getCityOne().getCityName().equalsIgnoreCase(origin.getCityName())){
+                System.out.println(ANSI_GREEN +rou.getCityOne().getCityName() + " - " +rou.getCityTwo().getCityName() + ANSI_RESET);
             }
         }
-        //TODO: add more routes between all cities.
-        for (City availableCities: available){
-            System.out.println(ANSI_GREEN + origin.getCityName() +" this to " + availableCities.getCityName() + ANSI_RESET);
-        }
+
+        int pickRandRouteByOrigin = pickRandom.pickRandomObject(availableDestinations.size());
+        Route randomRoute = availableDestinations.get(pickRandRouteByOrigin);
+        int destinationRandom = randomRoute.getCityTwo().getCityId();
+
+        City destination = cityFacade.getCityByCityId(destinationRandom);
 
 
-        int pickDestinationRand = pickRandom.pickRandomObject(availableDestinations.size());
-        City destination = cityFacade.pickDestination(availableDestinations.get(pickDestinationRand));
+        //City destination = cityFacade.pickDestination(availableDestinations.get(pickDestinationRand));
         System.out.println("Destination picked: " + ANSI_GREEN + destination.getCityName() + ANSI_RESET);
 
         // picking a route
@@ -135,7 +133,24 @@ public class Main {
         }
 
         // pick random ticket
-        int pickTicket = pickRandom.pickRandomObject(tickets.size());
+        if(tickets.size() > 0){
+            int pickTicket = pickRandom.pickRandomObject(tickets.size());
+            Ticket pickedTicket = tickets.get(pickTicket);
+
+            System.out.println(ANSI_BLUE + "Picked ticket" + ANSI_RESET);
+
+            System.out.println("**************** TICKET *********************");
+            System.out.println("From: " + pickedTicket.getRoute().getCityOne().getCityName() + " to " + pickedTicket.getRoute().getCityTwo().getCityName());
+            System.out.println("Departure: " + pickedTicket.getDepartureDate() + " - " + pickedTicket.getDepartureTime());
+            System.out.println("Arrival: " + pickedTicket.getArrivalDate() + " - " + pickedTicket.getArrivalTime());
+            System.out.println("Company: " + pickedTicket.getCompany().getCompanyName());
+            System.out.println("Price: " + pickedTicket.getPrice());
+            System.out.println("**********************************************\n");
+        }else{
+            System.out.println("No tickets found");
+            System.out.println("Run application again");
+        }
+
 
         // TODO!
         /*

@@ -25,4 +25,9 @@ public class CityFacade {
     public City pickDestination(City destination){
         return city.pickDestination(destination);
     }
+
+    public City getCityByCityId(int cityId){
+        City destination = city.getCityById(cityId);
+        return destination;
+    }
 }
