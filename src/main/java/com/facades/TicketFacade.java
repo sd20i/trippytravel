@@ -1,10 +1,8 @@
 package com.facades;
 import com.concreteClasses.TicketConcrete;
 import com.interfaces.Iticket;
-import com.trippy.entity.Client;
-import com.trippy.entity.Route;
-import com.trippy.entity.Ticket;
-import com.trippy.entity.TravelCompany;
+import com.trippy.entity.*;
+
 import javax.persistence.EntityManager;
 import java.util.List;
 
@@ -19,7 +17,7 @@ public class TicketFacade {
         return ticket.createNewTicket(route, company, price);
     };
 
-    public List<Ticket> ticketsByClient(Client client){
+    public List<Itinerary> ticketsByClient(Client client){
         return ticket.getTicketsByClient(client);
     };
 

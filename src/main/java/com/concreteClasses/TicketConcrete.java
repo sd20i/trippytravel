@@ -51,7 +51,7 @@ public class TicketConcrete implements Iticket {
     }
 
     @Override
-    public List<Ticket> getTicketsByClient(Client client) {
+    public List<Itinerary> getTicketsByClient(Client client) {
         List tickets;
         Query queryTickets = em.createQuery("SELECT i FROM Itinerary i WHERE i.client.id =:clientId ");
         queryTickets.setParameter("clientId", client.getClientId());

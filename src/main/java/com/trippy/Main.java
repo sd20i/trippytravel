@@ -5,7 +5,6 @@ import com.helper.RandomObject;
 import com.trippy.entity.*;
 import com.trippy.jpa.DbConnect;
 import javax.persistence.EntityManager;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
