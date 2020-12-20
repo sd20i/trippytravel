@@ -1,5 +1,5 @@
 package com.iterator;
 
 public interface IContainer {
-    public ItinerarysRepository.CollectionofNamesIterate getIterator();
+    public ItinerarysRepository.CollectionOfIitnaries getIterator();
 }

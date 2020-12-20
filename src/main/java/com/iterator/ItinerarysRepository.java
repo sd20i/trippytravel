@@ -14,16 +14,16 @@ public class ItinerarysRepository implements IContainer {
     }
 
     @Override
-    public CollectionofNamesIterate getIterator() {
-        return new CollectionofNamesIterate(this);
+    public CollectionOfIitnaries getIterator() {
+        return new CollectionOfIitnaries(this);
     }
 
-    public static class CollectionofNamesIterate implements Iterator<Itinerary> {
+    public static class CollectionOfIitnaries implements Iterator<Itinerary> {
         private int currentElement = 0;
         private ItinerarysRepository itinerarysRepository;
 
 
-        public CollectionofNamesIterate(ItinerarysRepository itinerarysRepository) {
+        public CollectionOfIitnaries(ItinerarysRepository itinerarysRepository) {
             this.itinerarysRepository = itinerarysRepository;
         }
 

@@ -7,14 +7,14 @@ public class DbConnect {
 
     private static final String DB_PU = "trippyPlannerApp";
 
-    private static final DbConnect singleton = new DbConnect();
+    private static final DbConnect database = new DbConnect();
 
     private EntityManagerFactory emf;
 
     private DbConnect() {}
 
     public static DbConnect getInstance() {
-        return singleton;
+        return database;
     }
 
     public EntityManagerFactory getEntityManagerFactory() {
@@ -22,12 +22,5 @@ public class DbConnect {
             emf = Persistence.createEntityManagerFactory(DB_PU);
         }
         return emf;
-    }
-
-    public void closeEmf() {
-        if(emf.isOpen() || emf != null) {
-            emf.close();
-        }
-        emf = null;
     }
 }
