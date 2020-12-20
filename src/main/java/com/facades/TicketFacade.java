@@ -6,7 +6,6 @@ import com.trippy.entity.Route;
 import com.trippy.entity.Ticket;
 import com.trippy.entity.TravelCompany;
 import javax.persistence.EntityManager;
-import java.util.ArrayList;
 import java.util.List;
 
 public class TicketFacade {
@@ -20,11 +19,16 @@ public class TicketFacade {
         return ticket.createNewTicket(route, company, price);
     };
 
-    public void ticketsByClient(Client client){ // finish this
-        ticket.getTicketsByClient(client);
+    public List<Ticket> ticketsByClient(Client client){
+        return ticket.getTicketsByClient(client);
     };
 
     public List<Ticket> listTicketsByRoute(Route route){
         return ticket.getTicketsByRoute(route);
+    }
+
+    public void addTicketToClient(Client client, Ticket clientTicket){
+        ticket.addTicketToClient(client, clientTicket);
+
     }
 }

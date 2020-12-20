@@ -146,39 +146,14 @@ public class Main {
             System.out.println("Company: " + pickedTicket.getCompany().getCompanyName());
             System.out.println("Price: " + pickedTicket.getPrice());
             System.out.println("**********************************************\n");
+
+            ticketFacade.addTicketToClient(client1, pickedTicket);
         }else{
             System.out.println("No tickets found");
             System.out.println("Run application again");
         }
 
 
-        // TODO!
-        /*
-            - create ticket picking by client
-            - fix creation of ticket not persisting
-            - display itinerary by userid
-            - make sure it's crashing when tickets array is empty
-        */
-
-        // flow.
-        /*
-        1.1 - list all companies OK
-        1.2 - pick a company OK
-        1.3 - list all routes OK
-        1.4 - pick a route OK
-        1.5 - create a new ticket OK
-
-        2.1 - pick client by id. OK
-        2.2 - pick client by id that doesn't exist (to show null object) OK
-        2.3 - list all cities OK
-        2.4 - pick a city as origin OK
-        2.5 - show list of destinations available OK / buggy
-        2.6 - pick a destination OK
-        2.7 - show ticket list available OK
-        2.8 - pick a ticket OK
-        2.9 - display itinerary
-        2.10 - exit
-        */
 
     }
 }

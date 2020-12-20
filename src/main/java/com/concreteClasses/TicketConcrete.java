@@ -51,11 +51,28 @@ public class TicketConcrete implements Iticket {
     }
 
     @Override
-    public void getTicketsByClient(Client client) {
+    public List<Ticket> getTicketsByClient(Client client) {
         List tickets;
         Query queryTickets = em.createQuery("SELECT i FROM Itinerary i WHERE i.client.id =:clientId ");
         queryTickets.setParameter("clientId", client.getClientId());
         tickets = queryTickets.getResultList();
-        //System.out.println(gson.toJson(tickets));
+        return tickets;
+    }
+
+    @Override
+    public void addTicketToClient(Client client, Ticket ticket) {
+        Itinerary itinerary = new Itinerary();
+        EntityTransaction et = null;
+        try {
+            et = em.getTransaction();
+            et.begin();
+            itinerary.setClient(client);
+            itinerary.setTicket(ticket);
+            em.persist(itinerary);
+            et.commit();
+        }catch (Exception ex){
+            et.rollback();
+            System.out.println("EX " + ex);
+        }
     }
 }
